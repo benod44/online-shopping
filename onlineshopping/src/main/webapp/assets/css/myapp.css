@@ -4,9 +4,12 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- body {
-  padding-top: 56px;
+ html, body{
+    margin:0px;
+    padding:0px;
 }
+
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -473,7 +476,7 @@ mark,
   display: block;
   font-size: 80%;
   color: #6c757d;
-}
+} 
 
 .blockquote-footer::before {
   content: "\2014\00A0";
@@ -4148,7 +4151,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
+  position: fixed !important;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -6218,6 +6221,7 @@ a.close.disabled {
 
 .carousel {
   position: relative;
+  
 }
 
 .carousel.pointer-event {
@@ -9959,6 +9963,24 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important;
 }
+
+/*  
+custom styling
+*/
+/* .wrapper{
+	min-height:100%;
+	position:relative;
+}
+
+.content{
+	padding-bottom:60px;
+}
+.footer{
+	position:absolute;
+	bottom:0px;
+	height:60px;
+	
+} */
 
 @media print {
   *,
